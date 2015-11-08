@@ -30,7 +30,7 @@ $:.unshift File.dirname(__FILE__)
 
 require 'ext/ext'
 
-module Glinda
+module Toto
   Paths = {
     :templates => "templates",
     :pages => "templates/pages",
@@ -415,7 +415,7 @@ module Glinda
     def initialize config = {}, &blk
       @config = config.is_a?(Config) ? config : Config.new(config)
       @config.instance_eval(&blk) if block_given?
-      @site = Glinda::Site.new(@config)
+      @site = Toto::Site.new(@config)
     end
 
     def call env
@@ -434,7 +434,7 @@ module Glinda
       @response['Content-Type']   = Rack::Mime.mime_type(".#{response[:type]}")
 
       # Set http cache headers
-      @response['Cache-Control'] = if Glinda.env == 'production'
+      @response['Cache-Control'] = if Toto.env == 'production'
         "public, max-age=#{@config[:cache]}"
       else
         "no-cache, must-revalidate"

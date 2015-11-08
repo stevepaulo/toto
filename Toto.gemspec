@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{glinda}
+  s.name = %q{toto}
   s.version = "0.2.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -21,19 +21,19 @@ Gem::Specification.new do |s|
     ".rspec",
     "Gemfile",
     "Gemfile.lock",
-    "Glinda.gemspec",
+    "Toto.gemspec",
     "LICENSE",
     "README.md",
     "Rakefile",
     "VERSION",
     "lib/ext/ext.rb",
-    "lib/glinda.rb",
+    "lib/toto.rb",
     "spec/articles/1900-05-17-the-wonderful-wizard-of-oz.txt",
     "spec/articles/2001-01-01-two-thousand-and-one.txt",
     "spec/articles/2009-04-01-tilt-factor.txt",
     "spec/articles/2009-12-04-some-random-article.txt",
     "spec/articles/2009-12-11-the-dichotomy-of-design.txt",
-    "spec/glinda_spec.rb",
+    "spec/toto_spec.rb",
     "spec/spec_helper.rb",
     "spec/templates/about.rhtml",
     "spec/templates/archives.rhtml",
@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
     "spec/templates/repo.rhtml",
     "spec/templates/tags.rhtml"
   ]
-  s.homepage = %q{http://github.com/rschmukler/glinda}
+  s.homepage = %q{http://github.com/rschmukler/toto}
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.6}
   s.summary = %q{Toto, expanded}

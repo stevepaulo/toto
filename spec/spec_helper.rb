@@ -6,7 +6,7 @@ require 'capybara/rspec'
 $:.unshift File.dirname(__FILE__)
 $:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 
-require 'glinda'
+require 'toto'
 
-Capybara.app = Glinda::Server.new
+Capybara.app = Toto::Server.new
 
