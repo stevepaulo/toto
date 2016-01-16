@@ -370,8 +370,8 @@ module Toto
       if !self[:image] || !@config[:media_host]
         ''
       else
-        article_year = DateTime.parse(self[:date]).strftime("%Y")
-        article_month = DateTime.parse(self[:date]).strftime("%m")
+        article_year = DateTime.new(self[:date]).strftime("%Y")
+        article_month = DateTime.new(self[:date]).strftime("%m")
         "#{@config[:media_host]}/images/posts/#{article_year}/#{article_month}/#{self[:image]}"
       end
     end
