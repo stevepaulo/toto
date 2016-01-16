@@ -370,7 +370,9 @@ module Toto
       if !self[:image] || !@config[:media_host]
         ''
       else
-        "#{@config[:media_host]}/images/posts/#{self[:date].strftime("%Y")}/#{self[:date].strftime("%m")}/#{self[:image]}"
+        hero_image = "#{@config[:media_host]}/images/posts/#{self[:date].strftime("%Y")}/#{self[:date].strftime("%m")}/#{self[:image]}"
+        @context[:hero_image] = hero_image
+        hero_image
       end
     end
 
