@@ -366,6 +366,16 @@ module Toto
       end
     end
 
+    def hero_image
+      if !self[:image] || !@config[:media_host]
+        ''
+      else
+        article_year = DateTime.parse(self[:date]).strftime("%Y")
+        article_month = DateTime.parse(self[:date]).strftime("%m")
+        "#{@config[:media_host]}/images/posts/#{article_year}/#{article_month}/#{self[:image]}"
+      end
+    end
+
     def title()   self[:title] || "an article"               end
     def date()    @config[:date].call(self[:date])           end
     def author()  self[:author] || @config[:author]          end
