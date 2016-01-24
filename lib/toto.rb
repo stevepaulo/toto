@@ -235,10 +235,6 @@ module Toto
         @config[:title]
       end
 
-      def hero_image
-        @hero_image ||= Article.hero_image
-      end
-
       def render page, type
         content = to_html page, @config
         type == :html ? to_html(:layout, @config, &Proc.new { content }) : send(:"to_#{type}", page)
@@ -367,14 +363,6 @@ module Toto
         self[:tags].split(',').map(&:strip)
       else
         []
-      end
-    end
-
-    def hero_image
-      if !self[:image] || !@config[:media_host]
-        ''
-      else
-        "#{@config[:media_host]}/images/posts/#{self[:date].strftime("%Y")}/#{self[:date].strftime("%m")}/#{self[:image]}"
       end
     end
 
