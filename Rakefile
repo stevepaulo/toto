@@ -7,17 +7,13 @@ begin
     gem.name = "toto"
     gem.summary = %Q{Toto, expanded}
     gem.description = %Q{Toto, expanded}
-    gem.email = "ryan@slingingcode.com"
-    gem.homepage = "http://github.com/rschmukler/toto"
-    gem.authors = ["rschmukler"]
+    gem.email = "stevepaulo@gmail.com"
+    gem.homepage = "http://github.com/stevepaulo/toto"
+    gem.authors = ["stevepaulo"]
     gem.add_development_dependency "rspec"
     gem.add_dependency "builder"
     gem.add_dependency "rack"
-    if RUBY_PLATFORM =~ /win32/
-      gem.add_dependency "maruku"
-    else
-      gem.add_dependency "rdiscount"
-    end
+    gem.add_dependency "rdiscount"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
