@@ -62,10 +62,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>.freeze, [">= 0"])
       s.add_development_dependency(%q<gemcutter>.freeze, [">= 0"])
       s.add_development_dependency(%q<pry>.freeze, [">= 0"])
-      s.add_development_dependency(%q<rspec>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<builder>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<rack>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<rdiscount>.freeze, [">= 0"])
     else
       s.add_dependency(%q<rdiscount>.freeze, [">= 0"])
       s.add_dependency(%q<builder>.freeze, [">= 0"])
@@ -74,10 +70,6 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<jeweler>.freeze, [">= 0"])
       s.add_dependency(%q<gemcutter>.freeze, [">= 0"])
       s.add_dependency(%q<pry>.freeze, [">= 0"])
-      s.add_dependency(%q<rspec>.freeze, [">= 0"])
-      s.add_dependency(%q<builder>.freeze, [">= 0"])
-      s.add_dependency(%q<rack>.freeze, [">= 0"])
-      s.add_dependency(%q<rdiscount>.freeze, [">= 0"])
     end
   else
     s.add_dependency(%q<rdiscount>.freeze, [">= 0"])
@@ -87,10 +79,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jeweler>.freeze, [">= 0"])
     s.add_dependency(%q<gemcutter>.freeze, [">= 0"])
     s.add_dependency(%q<pry>.freeze, [">= 0"])
-    s.add_dependency(%q<rspec>.freeze, [">= 0"])
-    s.add_dependency(%q<builder>.freeze, [">= 0"])
-    s.add_dependency(%q<rack>.freeze, [">= 0"])
-    s.add_dependency(%q<rdiscount>.freeze, [">= 0"])
   end
 end
 

@@ -10,10 +10,6 @@ begin
     gem.email = "stevepaulo@gmail.com"
     gem.homepage = "http://github.com/stevepaulo/toto"
     gem.authors = ["stevepaulo"]
-    gem.add_development_dependency "rspec"
-    gem.add_dependency "builder"
-    gem.add_dependency "rack"
-    gem.add_dependency "rdiscount"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
